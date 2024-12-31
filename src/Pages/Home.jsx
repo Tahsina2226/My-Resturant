@@ -1,9 +1,9 @@
 import React from 'react'
-
+import Slider from '../Routes/Slider'
 const Home = () => {
     return (
         <div>
-            Home
+            <Slider></Slider>
         </div>
     )
 }
