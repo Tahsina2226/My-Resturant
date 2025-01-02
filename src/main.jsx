@@ -10,6 +10,7 @@ import {
 import Home from './Pages/Home.jsx';
 import ErrorPages from './Pages/ErroorPages.jsx';
 import Roots from './Roots.jsx';
+import OurMenu from './Routes/Ourmenu.jsx';
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
       {
         path: '',
         element: <Home />,
+      },
+      {
+        path: '/menu',
+        element: <OurMenu/>,
       },
     ],
   },

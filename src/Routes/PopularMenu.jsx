@@ -28,7 +28,7 @@ const PopularMenu = () => {
                             <th className="border-gray-300 px-4 py-2 border text-left">Name</th>
                             <th className="border-gray-300 px-4 py-2 border text-left">Recipe</th>
                             <th className="border-gray-300 px-4 py-2 border text-left">Price</th>
-                            <th className="border-gray-300 px-4 py-2 border text-center">Action</th>
+                            
                         </tr>
                     </thead>
                     <tbody>
@@ -44,13 +44,7 @@ const PopularMenu = () => {
                                 <td className="border-gray-300 px-4 py-2 border text-gray-800">{item.name}</td>
                                 <td className="border-gray-300 px-4 py-2 border text-gray-600">{item.recipe}</td>
                                 <td className="border-gray-300 px-4 py-2 border font-bold text-gray-800">${item.price}</td>
-                                <td className="border-gray-300 px-4 py-2 border text-center">
-                                    <button 
-                                        className="bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-md text-white transition-colors duration-300"
-                                    >
-                                        Order Now
-                                    </button>
-                                </td>
+                                
                             </tr>
                         ))}
                     </tbody>
