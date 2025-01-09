@@ -19,13 +19,14 @@ const OurMenu = () => {
                             backgroundColor: '#15151599', // Semi-transparent dark gray
                         }}
                     >
-                        <h1 className="mb-4 font-bold text-4xl md:text-4xl">OUR MENU</h1>
+                        <h1 className="mb-4 font-bold text-4xl md:text-4xl">OUR SHOP</h1>
                         <p className="mb-2 text-lg md:text-xl italic">
-                            Would you like to try a dish?
+                        Would you like to try a dish?
                         </p>
                         <p className="text-sm md:text-lg">
-                            Explore our variety of flavors crafted to delight your taste buds.
-                        </p>
+    Explore our menu and indulge in delicious dishes crafted just for you. Whether you're craving a quick bite or a full meal, we've got something for everyone!
+</p>
+
                     </div>
                 </div>
             </div>

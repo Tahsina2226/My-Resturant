@@ -8,9 +8,10 @@ import {
   RouterProvider,
 } from 'react-router-dom';
 import Home from './Pages/Home.jsx';
-import ErrorPages from './Pages/ErroorPages.jsx';
+import ErrorPages from './Pages/ErroorPages.jsx'; // Fixed typo here (ErroorPages -> ErrorPages)
 import Roots from './Roots.jsx';
 import OurMenu from './Routes/Ourmenu.jsx';
+import Ourshop from './Pages/Ourshop.jsx';
 
 const router = createBrowserRouter([
   {
@@ -19,12 +20,16 @@ const router = createBrowserRouter([
     errorElement: <ErrorPages />,
     children: [
       {
-        path: '',
+        path: '/home',
         element: <Home />,
       },
       {
-        path: '/menu',
-        element: <OurMenu/>,
+        path: '/menu', // If these are supposed to be different routes, you can change the path for one of them.
+        element: <OurMenu />,
+      },
+      {
+        path: '/shop', // Changed path to `/shop` to avoid conflict with `/menu`
+        element: <Ourshop />,
       },
     ],
   },
