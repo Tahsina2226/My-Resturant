@@ -1,17 +1,16 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import './index.css';
-import App from './App.jsx';
-
 import {
   createBrowserRouter,
   RouterProvider,
 } from 'react-router-dom';
 import Home from './Pages/Home.jsx';
-import ErrorPages from './Pages/ErroorPages.jsx'; // Fixed typo here (ErroorPages -> ErrorPages)
+import ErrorPages from './Pages/ErroorPages.jsx'; // Fixed typo here
 import Roots from './Roots.jsx';
 import OurMenu from './Routes/Ourmenu.jsx';
 import Ourshop from './Pages/Ourshop.jsx';
+import Contact from './Pages/Contact.jsx';
 
 const router = createBrowserRouter([
   {
@@ -24,12 +23,16 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: '/menu', // If these are supposed to be different routes, you can change the path for one of them.
+        path: '/menu',
         element: <OurMenu />,
       },
       {
-        path: '/shop', // Changed path to `/shop` to avoid conflict with `/menu`
+        path: '/shop',
         element: <Ourshop />,
+      },
+      {
+        path: '/contact',
+        element: <Contact />,
       },
     ],
   },
