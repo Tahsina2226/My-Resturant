@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Offered from './Offered';
 
 const OurMenu = () => {
     return (
@@ -29,7 +29,7 @@ const OurMenu = () => {
                     </div>
                 </div>
             </div>
-            
+            <Offered></Offered>
         </div>
     );
 };
